@@ -1,0 +1,49 @@
+stages:
+  - install
+  - test
+  - build
+  - deploy
+
+# Stage 1: Install Dependencies
+install_frontend:
+  stage: install
+  script:
+    - cd frontend
+    - npm install
+  artifacts:
+    paths:
+      - frontend/node_modules/
+
+install_backend:
+  stage: install
+  script:
+    - cd backend
+    - npm install
+  artifacts:
+    paths:
+      - backend/node_modules/
+
+# Stage 2: Run Tests
+test_frontend:
+  stage: test
+  script:
+    - cd frontend
+    - npm test -- --watchAll=false
+
+test_backend:
+  stage: test
+  script:
+    - cd backend
+    - npm test
+
+# Stage 3: Build React Frontend
+build_frontend:
+  stage: build
+  script:
+    - cd frontend
+    - npm run build
+  artifacts:
+    paths:
+      - frontend/build/
+
+
