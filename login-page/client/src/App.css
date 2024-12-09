@@ -1,0 +1,78 @@
+/* src/pages/Home.css */
+button {
+  background-color: #1871ba;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+  width: 100px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
+}
+
+
+
+  /* App.css */
+  .app-container {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+  }
+  
+  .header-container {
+    margin-left: 16.5%;
+    width: 83%;
+  }
+  
+  .main-container {
+    display: flex;
+    min-height: 100vh;
+  }
+  
+  
+  
+  .content-container {
+    flex-grow: 1;
+    padding: 10px;
+    margin-left: 2%;
+  
+  }
+  
+  .breadcrumbs {
+    padding: 10px 0;
+    list-style: none;
+  }
+  
+  .breadcrumbs a {
+    color: #0b5493;
+    text-decoration: none;
+    font-weight:bolder;
+    font-size: larger;
+  }
+  
+  .breadcrumbs span {
+    margin: 0 5px;
+  }
+  
+  .breadcrumbs svg,
+  .breadcrumbs img {
+    width: 16px; /* Adjust based on your icon size */
+    height: 16px;
+    
+    margin-right: 5px;
+  }
+  
+  /* Add this to App.css or LoginPage.css */
+  
+  

@@ -1,0 +1,155 @@
+.login-container {
+    max-width: 400px;
+    margin: auto;
+    margin-top: 160px;
+    padding: 20px;
+    border: 3px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Add a subtle shadow for depth */
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+    position: relative; /* Prepares for potential positioning of elements inside */
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    padding-left: 5px; /* Aligns text slightly away from the edge */
+  }
+  
+  .form-group input {
+    width: calc(100% - 20px); /* Adjusts width to account for padding */
+    padding: 10px;
+    margin: 0 10px; /* Adds margin to the sides */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Align checkbox and "Remember Me" in one line with space around */
+  /* Ensure the form group for the checkbox is using flex display */
+  .form-group-checkbox {
+    display: flex;
+    align-items: center; /* Ensures vertical alignment */
+    margin-left: 70%; /* Aligns content to the left */
+    
+  }
+  
+  .form-group-checkbox label {
+    margin-left: 8px; /* Adjust as needed for space between checkbox and label */
+    white-space: nowrap; /* Keeps the label on one line */
+    
+  }
+  
+  /* Targeting the checkbox directly to reduce space */
+  .form-group-checkbox input[type="checkbox"] {
+    margin: 0; /* Removes default margin */
+    padding-right: 8px; /* Adds some space to the right of the checkbox */
+  }
+  
+  button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: calc(100% - 20px); /* Button width to match input fields */
+    margin: 10px 10px; /* Aligns margin with input fields */
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  .forgot-password {
+    display: block;
+    text-align: left;
+    margin-top: -25px;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .login-container {
+      margin-top: 60px; /* Less margin at the top for smaller screens */
+      padding: 15px; /* Slightly less padding to accommodate smaller screens */
+    }
+  
+    .form-group label {
+      padding-left: 3px; /* Less padding on smaller screens */
+    }
+  
+    .form-group input,
+    button {
+      margin: 0 5px; /* Adjust margins for smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .login-container {
+      border: 2px solid #ccc; /* Thinner border on very small screens */
+      margin-top: 30px; /* Less margin at the top */
+    }
+  
+    .form-group, .form-group-checkbox {
+      flex-direction: column; /* Stack checkbox and label vertically on smaller screens */
+      align-items: flex-start;
+    }
+  
+    .form-group-checkbox input[type="checkbox"] {
+      margin: 0 0 5px 0; /* Adjust checkbox margin on smaller screens */
+    }
+  }
+
+  
+
+  .header-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #06469B; /* Adjust the color to match the exact blue */
+    box-shadow: 0px 18px 18px rgba(57, 56, 56, 0.1);
+    color: white;
+    padding: 1% 2%; /* Increased padding, especially top and bottom for more space */
+    height: 50px; /* Adjusted from a fixed height to auto to accommodate inner padding */
+}
+
+.logo-sections {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.logo {
+    height: 4vh; /* Use viewport height for a responsive height */
+    margin-right: 1vw;
+}
+
+.title-containers {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    flex-grow: 1; /* Ensure the title-container takes up remaining space */
+    margin-left: auto; /* Push the title-container to the center */
+    margin-right: 30%; /* Adjusted for symmetry and better centering */
+}
+
+.titles {
+    font-size: calc(10px + 0.9vw); /* Responsive font size */
+    font-weight: bold;
+    font-style: italic;
+    margin-bottom: 0.5rem; /* Added space between the title and subtitle */
+}
+
+.subtitles {
+    font-size: calc(8px + 0.5vw); /* Smaller responsive font size */
+    opacity: 0.9;
+    margin-top: 0.2rem; /* Adjusted margin to create a smaller gap between title and subtitle */
+}
+
+
+.user-section {
+    text-align: right;
+    flex-basis: 20%; /* Adjust the width of the user section */
+}
